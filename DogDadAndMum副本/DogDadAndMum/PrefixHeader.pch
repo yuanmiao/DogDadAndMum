@@ -1,0 +1,18 @@
+//
+//  PrefixHeader.pch
+//  DogDadAndMum
+//
+//  Created by 小宸宸Dad on 15/6/26.
+//  Copyright (c) 2015年 fj. All rights reserved.
+//
+
+#ifndef DogDadAndMum_PrefixHeader_pch
+#define DogDadAndMum_PrefixHeader_pch
+#import "BaseViewController.h"
+#import "FlexibleFrame.h"
+#import "UIView+Flexible.h"
+#define Font [UIFont systemFontOfSize:20]
+
+
+
+#endif
