@@ -30,7 +30,6 @@
 		898846271B3DAED20026FB6F /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 898846261B3DAED20026FB6F /* LoadingView.m */; };
 		898846291B3DB9B80026FB6F /* iconfont-return.png in Resources */ = {isa = PBXBuildFile; fileRef = 898846281B3DB9B80026FB6F /* iconfont-return.png */; };
 		899101061B3F9F32003745D8 /* Dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 899101051B3F9F32003745D8 /* Dog.jpg */; };
-		8991010C1B3FB389003745D8 /* jiahao.png in Resources */ = {isa = PBXBuildFile; fileRef = 8991010B1B3FB389003745D8 /* jiahao.png */; };
 		8991010E1B3FB490003745D8 /* jiahao1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8991010D1B3FB490003745D8 /* jiahao1.png */; };
 		899101121B3FB629003745D8 /* jihao3.png in Resources */ = {isa = PBXBuildFile; fileRef = 899101111B3FB629003745D8 /* jihao3.png */; };
 		899101141B3FB845003745D8 /* 52b546511ef75.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 899101131B3FB845003745D8 /* 52b546511ef75.jpg */; };
@@ -46,9 +45,7 @@
 		89B0F1311B3D2B3E00545C53 /* jinru.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B0F1301B3D2B3E00545C53 /* jinru.png */; };
 		89B0F1341B3D2D1A00545C53 /* FlexibleFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B0F1321B3D2D1A00545C53 /* FlexibleFrame.m */; };
 		89B0F1381B3D2DE400545C53 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B0F1371B3D2DE400545C53 /* BaseViewController.m */; };
-		89B0F13A1B3D2FC300545C53 /* 登录前.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B0F1391B3D2FC300545C53 /* 登录前.png */; };
 		89B0F13D1B3D344000545C53 /* UIView+Flexible.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B0F13C1B3D344000545C53 /* UIView+Flexible.m */; };
-		89B0F13F1B3D388E00545C53 /* 登录前副本.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B0F13E1B3D388E00545C53 /* 登录前副本.png */; };
 		89B0F1421B3D3C6A00545C53 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B0F1411B3D3C6A00545C53 /* LoginViewController.m */; };
 		89B0F1461B3D479F00545C53 /* 登录页面1.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B0F1451B3D479F00545C53 /* 登录页面1.png */; };
 		89B0F1481B3D53FB00545C53 /* login_person.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B0F1471B3D53FB00545C53 /* login_person.png */; };
@@ -111,7 +108,6 @@
 		898846261B3DAED20026FB6F /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 		898846281B3DB9B80026FB6F /* iconfont-return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-return.png"; sourceTree = "<group>"; };
 		899101051B3F9F32003745D8 /* Dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dog.jpg; sourceTree = "<group>"; };
-		8991010B1B3FB389003745D8 /* jiahao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiahao.png; sourceTree = "<group>"; };
 		8991010D1B3FB490003745D8 /* jiahao1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiahao1.png; sourceTree = "<group>"; };
 		899101111B3FB629003745D8 /* jihao3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jihao3.png; sourceTree = "<group>"; };
 		899101131B3FB845003745D8 /* 52b546511ef75.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 52b546511ef75.jpg; sourceTree = "<group>"; };
@@ -134,10 +130,8 @@
 		89B0F1351B3D2D3400545C53 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		89B0F1361B3D2DE400545C53 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		89B0F1371B3D2DE400545C53 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		89B0F1391B3D2FC300545C53 /* 登录前.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录前.png"; sourceTree = "<group>"; };
 		89B0F13B1B3D344000545C53 /* UIView+Flexible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Flexible.h"; sourceTree = "<group>"; };
 		89B0F13C1B3D344000545C53 /* UIView+Flexible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Flexible.m"; sourceTree = "<group>"; };
-		89B0F13E1B3D388E00545C53 /* 登录前副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录前副本.png"; sourceTree = "<group>"; };
 		89B0F1401B3D3C6A00545C53 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		89B0F1411B3D3C6A00545C53 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		89B0F1451B3D479F00545C53 /* 登录页面1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录页面1.png"; sourceTree = "<group>"; };
@@ -364,7 +358,6 @@
 				899101131B3FB845003745D8 /* 52b546511ef75.jpg */,
 				899101111B3FB629003745D8 /* jihao3.png */,
 				8991010D1B3FB490003745D8 /* jiahao1.png */,
-				8991010B1B3FB389003745D8 /* jiahao.png */,
 				899101051B3F9F32003745D8 /* Dog.jpg */,
 				898846281B3DB9B80026FB6F /* iconfont-return.png */,
 				8988460C1B3DABE90026FB6F /* 加载中 */,
@@ -379,8 +372,6 @@
 				89B0F1471B3D53FB00545C53 /* login_person.png */,
 				89B0F1451B3D479F00545C53 /* 登录页面1.png */,
 				89B0F1491B3D540700545C53 /* login_password.png */,
-				89B0F13E1B3D388E00545C53 /* 登录前副本.png */,
-				89B0F1391B3D2FC300545C53 /* 登录前.png */,
 				89B0F1301B3D2B3E00545C53 /* jinru.png */,
 				89B0F12A1B3D24CD00545C53 /* bg.png */,
 			);
@@ -598,7 +589,6 @@
 				89F9ACBD1B3D74EB007FAD48 /* 1.png in Resources */,
 				899101061B3F9F32003745D8 /* Dog.jpg in Resources */,
 				898846241B3DABE90026FB6F /* loading20006.png in Resources */,
-				89B0F13A1B3D2FC300545C53 /* 登录前.png in Resources */,
 				89B0F14E1B3D550200545C53 /* login_textFieldBg@2x.png in Resources */,
 				899101191B402DED003745D8 /* registerBtn@2x.png in Resources */,
 				89B0F1461B3D479F00545C53 /* 登录页面1.png in Resources */,
@@ -607,8 +597,6 @@
 				898846201B3DABE90026FB6F /* loading20002.png in Resources */,
 				8988461D1B3DABE90026FB6F /* loading05.png in Resources */,
 				8988461C1B3DABE90026FB6F /* loading04.png in Resources */,
-				8991010C1B3FB389003745D8 /* jiahao.png in Resources */,
-				89B0F13F1B3D388E00545C53 /* 登录前副本.png in Resources */,
 				89B22A4E1B41214A0097CB55 /* iconfont-nichengyutouxiang.png in Resources */,
 				89F9ACB61B3D6DD8007FAD48 /* login_weibo@2x.png in Resources */,
 				8988461E1B3DABE90026FB6F /* loading06.png in Resources */,
