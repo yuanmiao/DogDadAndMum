@@ -9,6 +9,11 @@
 #import "LoginViewController.h"
 #import "LoadingView.h"
 #import "RegViewController.h"
+#import "FriendListViewController.h"
+#import "RecentViewController.h"
+#import "SetViewController.h"
+#import "AppDelegate.h"
+
 
 #define TEXTFIELD_WIDTH  240
 #define TEXTFIELD_HEIGHT  43
@@ -260,8 +265,6 @@
     [self.view addSubview:self.weixinBtn];
     [self.view addSubview:self.qqBtn];
     [self.view addSubview:self.weiboBtn];
-    
-    
 }
 
 
@@ -272,10 +275,31 @@
 
 - (void)loginPressAction:(UIButton *)sender{
     NSLog(@"登录");
-    //登录动画
-    LoadingView *load = [[LoadingView alloc]initWithIPhone5Frame:CGRectMake(0, 0, 320, 568)];
-    [self.view addSubview:load];
-    [load startLoading];
+//    //登录动画
+//    LoadingView *load = [[LoadingView alloc]initWithIPhone5Frame:CGRectMake(0, 0, 320, 568)];
+//    [self.view addSubview:load];
+//    [load startLoading];
+    UIImage *recentImage = [UIImage imageNamed:@"iconfont-zuijinlianxi"];
+    UIImage *recentSelectImage = [UIImage imageNamed:@"iconfont-zuijinlianxi2"];
+    RecentViewController *recentVC = [[RecentViewController alloc]initWithTitle:@"最近联系人" tabBarItemImage:recentImage selectImage:recentSelectImage];
+    UINavigationController *recentNav = [[UINavigationController alloc]initWithRootViewController:recentVC];
+    UITabBarController *tabBar = [[UITabBarController alloc]init];
+    
+    UIImage *friendImage = [UIImage imageNamed:@"iconfont-crmtubiao32"];
+     UIImage *friendSelectImage = [UIImage imageNamed:@"iconfont-lianxiren"];
+    FriendListViewController *friendVC = [[FriendListViewController alloc]initWithTitle:@"联系人" tabBarItemImage:friendImage selectImage:friendSelectImage];
+    UINavigationController *friendNav = [[UINavigationController alloc]initWithRootViewController:friendVC];
+    
+    UIImage *setImage = [UIImage imageNamed:@"iconfont-shezhi"];
+    UIImage *setSelectImage = [UIImage imageNamed:@"iconfont-shezhiS"];
+    SetViewController *setVC = [[SetViewController alloc]initWithTitle:@"设置" tabBarItemImage:setImage selectImage:setSelectImage];
+    UINavigationController *setNav = [[UINavigationController alloc]initWithRootViewController:setVC];
+    //设置选中的颜色
+    tabBar.tabBar.tintColor = [UIColor grayColor];
+    tabBar.viewControllers = @[recentNav,friendNav,setNav];
+    AppDelegate *app = [UIApplication sharedApplication].delegate;
+    app.window.rootViewController =tabBar;
+    
 }
 
 #pragma mark - 点击注册按钮的事件

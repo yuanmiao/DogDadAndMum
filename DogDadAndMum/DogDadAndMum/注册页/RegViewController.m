@@ -47,7 +47,7 @@
 /**
  *  title
  */
-@property (strong,nonatomic)UILabel *titleLabel;
+@property (strong,nonatomic)UIButton *titleBtn;
 
 
 /**
@@ -160,20 +160,19 @@
 }
 
 
-- (UILabel *)titleLabel{
+- (UIButton *)titleBtn{
 
-    if (!_titleLabel) {
-        _titleLabel = ({
-            UILabel  *label = [[UILabel alloc]initWithIPhone5Frame:CGRectMake(128*[FlexibleFrame ratio], 0*[FlexibleFrame ratio], 64*[FlexibleFrame ratio], 64*[FlexibleFrame ratio])];
-            label.text = @"注册";
-            label.textAlignment = NSTextAlignmentLeft;
-            label.font = Font;
-            label.textColor = [UIColor colorWithWhite:0.447 alpha:1.000];
-            label;
-        
+    if (!_titleBtn) {
+        _titleBtn = ({
+            UIButton *returnBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+            returnBtn.frame = CGRectMake((320/2-64/2)*[FlexibleFrame ratio], 6*[FlexibleFrame ratio], 64*[FlexibleFrame ratio], 64*[FlexibleFrame ratio]);
+            [returnBtn setTitle:@"注册" forState:UIControlStateNormal];
+            returnBtn.titleLabel.font = Font;
+            [returnBtn setTitleColor:[UIColor colorWithRed:0.839 green:0.522 blue:0.282 alpha:1.000] forState:UIControlStateNormal];
+            returnBtn;
         });
     }
-    return _titleLabel;
+    return _titleBtn;
 
 }
 
@@ -272,7 +271,7 @@
     [self.view addSubview:self.topBgView];
     [self.view addSubview:self.buttomBgView];
     [_topBgView addSubview:self.returnBtn];
-    [_topBgView addSubview:self.titleLabel];
+    [_topBgView addSubview:self.titleBtn];
     [_buttomBgView addSubview:self.addPIcBtn];
     [self addInputView];
     [_buttomBgView addSubview:self.getCodeBtn];
@@ -304,7 +303,7 @@
 - (void)haveSubmitLabel{
 
     UIButton *submitBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    submitBtn.frame = CGRectMake((200-60)*[FlexibleFrame ratio], 350*[FlexibleFrame ratio], 80*[FlexibleFrame ratio], 45*[FlexibleFrame ratio]);
+    submitBtn.frame = CGRectMake((200-64)*[FlexibleFrame ratio], 350*[FlexibleFrame ratio], 80*[FlexibleFrame ratio], 45*[FlexibleFrame ratio]);
     [submitBtn setTitle:@"已有账号?" forState:UIControlStateNormal];
     submitBtn.titleLabel.textAlignment  = NSTextAlignmentRight;
     submitBtn.titleLabel.font = [UIFont systemFontOfSize:16];

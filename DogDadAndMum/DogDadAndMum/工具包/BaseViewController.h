@@ -10,8 +10,11 @@
 
 @interface BaseViewController : UIViewController
 
-
+/**
+ *  左边的返回按钮
+ */
+@property (strong,nonatomic)UIBarButtonItem *leftButton;
 - (void)initlizeDataSource;
 - (void)initlizeAppearance;
-
+- (instancetype)initWithTitle:(NSString *)title tabBarItemImage:(UIImage *)image selectImage:(UIImage *)selectImage;
 @end
