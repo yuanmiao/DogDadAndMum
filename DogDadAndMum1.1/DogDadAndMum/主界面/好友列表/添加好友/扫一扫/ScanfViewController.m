@@ -56,7 +56,7 @@
     [self.view addSubview:searchAreaView];
     
     UIButton *openBtn =[UIButton buttonWithType:UIButtonTypeSystem];
-    openBtn.frame = CGRectMake(0, 568-70, 320, 70);
+    openBtn.frame = CGRectMake(0*[FlexibleFrame ratio], (568-70)*[FlexibleFrame ratio], 320*[FlexibleFrame ratio], 70*[FlexibleFrame ratio]);
     
     [openBtn setTitle:@"开启闪光灯" forState:UIControlStateNormal];
     openBtn.titleLabel.font = Font;
@@ -79,6 +79,7 @@
     [picker dismissViewControllerAnimated:YES completion:nil];
 //    _label.text =symbol.data;
     [self.delegate scanfReturnData:symbol.data];
+    
 }
 
 
